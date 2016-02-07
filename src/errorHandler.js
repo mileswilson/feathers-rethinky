@@ -1,6 +1,5 @@
 import errors from 'feathers-errors';
 
-console.log("ERRORS:",errors);
 export default function(error){
     let feathersError = error;
     if(error.name) {

@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint src/,test/",
     "test": "npm run lint && npm run mocha",
-    "mocha": "mocha test/ --compilers js:babel-register"
+    "mocha": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R  spec --compilers js:babel-register",
+    "coverage": "node_modules/.bin/babel-node node_modules/isparta/bin/isparta cover --report text --report html node_modules/mocha/bin/_mocha "
   },
   "keywords": [
     "Rethink",
@@ -23,6 +24,7 @@
     "eslint": "^1.10.3",
     "feathers": "^1.2.0",
     "feathers-service-tests": "^0.5.3",
+    "isparta": "^4.0.0",
     "jshint": "^2.8.0",
     "mocha": "^2.3.3"
   },
