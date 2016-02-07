@@ -1,0 +1,8 @@
+machine:
+  hosts:
+    docker: 127.0.0.1
+    
+test:
+    pre: 
+        - docker pull rethinkdb
+        - docker-compose up -d
