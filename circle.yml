@@ -1,7 +1,8 @@
 machine:
   hosts:
     docker: 127.0.0.1
-    
+  services:
+    - docker
 test:
     pre: 
         - docker pull rethinkdb
