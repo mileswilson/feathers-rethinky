@@ -8,5 +8,3 @@ test:
         - docker pull rethinkdb
         - docker-compose up -d
         - mkdir -p $CIRCLE_TEST_REPORTS/mocha
-    override: 
-        - npm test
