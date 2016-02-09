@@ -7,4 +7,4 @@ test:
     pre: 
         - docker pull rethinkdb
         - docker-compose up -d
-        - mkdir -p $CIRCLE_TEST_REPORTS/mocha
+        - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
