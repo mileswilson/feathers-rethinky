@@ -1,9 +1,12 @@
-import thinky,{type} from './thinky';
+/*eslint-env node*/
 
-const Person = thinky.createModel('people', {
-    name: type.string(),
-    age: type.number().integer(),
-    created: type.boolean()
+import thinky , { type } from "./thinky";
+
+const Person = thinky.createModel("people", {
+  name: type.string(),
+  age: type.number().integer(),
+  created: type.boolean()
 });
+export default Person;
 
 module.exports = Person;
