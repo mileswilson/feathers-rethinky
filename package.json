@@ -22,6 +22,10 @@
   },
   "author": "Miles Wilson <miles@mtwilson.co.uk>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mileswilson/feathers-rethinky.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.1.18",
     "babel-core": "^6.1.21",
