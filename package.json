@@ -11,6 +11,7 @@
     "mocha:": "mocha  --no-colors -R spec --compilers js:babel-register",
     "prepublish": "npm run babel"
   },
+  "files": ["src","lib"],
   "keywords": [
     "Rethink",
     "feathers",
@@ -20,7 +21,7 @@
     "registry":"https://registry.npmjs.org/"
   },
   "author": "Miles Wilson <miles@mtwilson.co.uk>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.1.18",
     "babel-core": "^6.1.21",
