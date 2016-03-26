@@ -1,6 +1,6 @@
 {
   "name": "feathers-rethinky",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Thinky.js RethinkDB Adaptor for Feathers JS",
   "main": "lib/index.js",
   "scripts": {
@@ -11,14 +11,17 @@
     "mocha:": "mocha  --no-colors -R spec --compilers js:babel-register",
     "prepublish": "npm run babel"
   },
-  "files": ["src","lib"],
+  "files": [
+    "src",
+    "lib"
+  ],
   "keywords": [
     "Rethink",
     "feathers",
     "thinky"
   ],
   "publishConfig": {
-    "registry":"https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "Miles Wilson <miles@mtwilson.co.uk>",
   "license": "MIT",
