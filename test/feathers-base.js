@@ -31,7 +31,8 @@ export default function common(people, _ids, errors, idProp = "id") {
       }).catch(done);
     });
 
-    it("returns NotFound error for non-existing id", done => {
+    it("returns NotFound error for non-existing id", function(done) {
+      this.timeout(5000);
       people.get("568225fbfe21222432e836ff").catch(error => {
         expect(error instanceof errors.NotFound).to.be.ok;
         expect(error.message).to.equal("No record found for id '568225fbfe21222432e836ff'");
@@ -434,7 +435,8 @@ export default function common(people, _ids, errors, idProp = "id") {
       }).catch(done);
     });
 
-    it("returns NotFound error for non-existing id", done => {
+    it("returns NotFound error for non-existing id", function(done)  {
+      this.timeout(5000);
       people.patch("568225fbfe21222432e836ff", { name: "PatchDoug" }).then(done, error => {
         expect(error).to.be.ok;
         expect(error instanceof errors.NotFound).to.be.ok;
