@@ -412,7 +412,7 @@ export default function common(people, _ids, errors, idProp = "id") {
     });
   });
 
-  describe.skip("patch", () => {
+  describe("patch", () => {
     it("updates an existing instance", done => {
       people.patch(_ids.Doug, { name: "PatchDoug" }).then(data => {
         expect(data[idProp].toString()).to.equal(_ids.Doug.toString());

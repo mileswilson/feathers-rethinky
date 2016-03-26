@@ -122,6 +122,24 @@ class Service {
     });
 
   }
+  
+  _patch(id, data) {
+    return this.get(id)
+      .then((found) => {
+        return found.merge(data).save();
+      });
+  }
+  
+  patch(id, data, params) {
+    if(id === null) {
+      return this._find(params).then(page => {
+        return Promise.all(page.data.map(
+          current => this._patch(current.id, data, params))
+        );
+      });
+    } 
+    return this._patch(id, data, params);
+  }
 }
 
 export default function init(name, options) {
