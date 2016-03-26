@@ -1,6 +1,8 @@
 import Proto from "uberproto";
 import errors from "feathers-errors";
 import filter from "feathers-query-filters";
+import Promise from "promiscuous";
+
 class Service {
   constructor(name, options) {
     if (!options.model) {

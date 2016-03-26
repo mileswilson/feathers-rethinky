@@ -44,8 +44,10 @@
     "mocha": "^2.3.3"
   },
   "dependencies": {
+    "bluebird": "^3.3.4",
     "feathers-errors": "^1.1.6",
     "feathers-query-filters": "^1.5.1",
+    "promiscuous": "^0.6.0",
     "thinky": "^2.2.4",
     "uberproto": "^1.2.0"
   }
