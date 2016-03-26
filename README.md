@@ -11,7 +11,7 @@
         ✓ returns NotFound error for non-existing id
       remove
         ✓ deletes an existing instance and returns the deleted instance
-        ✓ deletes multiple instances (40ms)
+        ✓ deletes multiple instances
       find
         ✓ returns all items
         ✓ filters results by a single parameter
@@ -39,9 +39,9 @@
         - replaces an existing instance
         - returns NotFound error for non-existing id
       patch
-        - updates an existing instance
-        - patches multiple instances
-        - returns NotFound error for non-existing id
+        ✓ updates an existing instance
+        ✓ patches multiple instances
+        ✓ returns NotFound error for non-existing id
       create
         ✓ creates a single new instance and returns the created instance
         ✓ creates multiple new instances
